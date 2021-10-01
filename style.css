@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+body {
+  background-color: #0e1223;
+  color: white;
+  font-family: 'Rubik';
+}
+
+.card {
+  margin: 25px 20px;
+  border-radius: 16px;
+  background-color: #1e204b;
+  position: relative;
+
+  overflow: hidden;
+}
+
+.card__inner {
+  position: inherit;
+  padding: 20px;
+  background-color: #1e204b;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.card__inner:hover {
+  background-color: #33397c;
+}
+
+.card__image {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+}
+
+.card__image--exercise {
+  position: absolute;
+  top: -3px;
+  right: 20px;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card__info--deactive {
+  color: #a6a8d1;
+}
+
+.card__bg--work {
+  padding-top: 40px;
+  background-color: #ff8a64;
+}
+
+.card__bg--play {
+  padding-top: 40px;
+  background-color: #56c3e6;
+}
+
+.card__bg--study {
+  padding-top: 40px;
+  background-color: #ff5f7b;
+}
+
+.card__bg--exercise {
+  padding-top: 40px;
+  background-color: #4bcf82;
+}
+
+.card__bg--social {
+  padding-top: 40px;
+  background-color: #7135d1;
+}
+
+.card__bg--self-care {
+  padding-top: 40px;
+  background-color: #f1c75b;
+}
+
+.profile {
+  margin-top: 80px;
+  background-color: #1e204b;
+}
+
+.profile__body {
+  background-color: #5746ed;
+  padding: 24px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+}
+
+.profile__picture {
+  width: 64px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.profile__details {
+  margin-left: 20px;
+}
+
+.profile__times {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.profile__times a {
+  color: #6c6caa;
+  transition: color 0.25s ease;
+  text-decoration: none;
+}
+
+.profile__times a:hover {
+  color: white;
+}
+
+a.active {
+  color: white;
+}
+
+@media (min-width: 855px) {
+  .flex {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .profile {
+    margin-top: 25px;
+    grid-row: 1 / span 2;
+  }
+
+  .profile__body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile__details {
+    margin-top: 40px;
+    max-width: 200px;
+    padding-bottom: 60px;
+  }
+
+  .profile__times {
+    flex-direction: column;
+  }
+
+  .profile__times a {
+    margin-bottom: 20px;
+  }
+
+  .card__info h2 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+  }
+
+  .card__info:nth-child(2) {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
